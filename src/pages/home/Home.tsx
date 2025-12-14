@@ -19,7 +19,7 @@ const handleShareWhatsApp = async () => {
     navigator.share({
       files: [file],
       title: "QR Code",
-      text: "شارك هذا الكود عبر واتساب",
+      text: "امسح الكود للدخول على الرابط",
     });
   } else {
     alert("المشاركة غير مدعومة على هذا الجهاز.");
