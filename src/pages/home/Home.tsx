@@ -19,7 +19,7 @@ Time: 09:30 PM - 01:30 AM
 `;
 
   // رابط QR image من QuickChart
-  const qrImageUrl = `https://quickchart.io/qr?text=${encodeURIComponent(qrData)}&size=400`;
+  const qrImageUrl = `https://quickchart.io/qr?text=${encodeURIComponent(qrData)}&size=900`;
 
   // نحول الصورة إلى Blob
   const response = await fetch(qrImageUrl);
