@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import './assets/fonts.css';
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --color-primary: #052864;
+  --color-bgInput: #F9FAFB;
+  --color-black: #1F232E;
+  --color-muted: #6B7280;
+  --color-green: #0BA047;
+  --color-darkPrimary: #262626;
+  --color-dark: #3A3A3A;
+  --color-bgDark: #1F1E25;
+}
+body, .ltr {
+  font-family: 'Poppins','Sans Serif';
+}
+body, .rtl {
+  font-family: 'Tajawal','Sans Serif';
+}
+::selection {
+  background-color: #0BA047;
+  color: #fff;
+}
+.dark ::selection {
+  background-color: #0BA047;
+  color: #fff;
+}
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #052864;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3A3A3A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.dashed-line {
+  width: 100%;
+  border-bottom: 2px dashed #000; /* أسود غامق وخط أسمك */
+  margin: 8px 0; /* مسافة مناسبة بين الأقسام */
+}
+
